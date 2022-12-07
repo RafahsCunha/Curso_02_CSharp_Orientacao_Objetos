@@ -1,0 +1,15 @@
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\obj\Debug\net6.0\Alura.csproj.AssemblyReference.cache
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\obj\Debug\net6.0\Alura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\obj\Debug\net6.0\Alura.AssemblyInfoInputs.cache
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\obj\Debug\net6.0\Alura.AssemblyInfo.cs
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\obj\Debug\net6.0\Alura.csproj.CoreCompileInputs.cache
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\bin\Debug\net6.0\Alura.exe
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\bin\Debug\net6.0\Alura.deps.json
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\bin\Debug\net6.0\Alura.runtimeconfig.json
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\bin\Debug\net6.0\Alura.dll
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\bin\Debug\net6.0\Alura.pdb
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\obj\Debug\net6.0\Alura.dll
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\obj\Debug\net6.0\refint\Alura.dll
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\obj\Debug\net6.0\Alura.pdb
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\obj\Debug\net6.0\Alura.genruntimeconfig.cache
+C:\Users\Rafa\Desktop\FACULDADE\Onboarding Totvs\Alura\Alura Orientacao a Objetos - Curso 2\Alura\obj\Debug\net6.0\ref\Alura.dll
