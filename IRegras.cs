@@ -9,7 +9,7 @@ namespace Curso_Alura_Orientacao_a_Objetos
     interface IRegras
     {
         // Deposito obrigatório
-        double primeiroDepositar(double valor);
+        void primeiroDepositar(double valor);
 
     }
 }
