@@ -34,10 +34,10 @@ namespace Curso_Alura_Orientacao_a_Objetos
             Console.WriteLine("Primeiro depósito efetuado no valor de R$ " + this.saldo);
         }
 
-        public double depositar(double valorDepositado)
+        public void depositar(double valorDepositado)
         {
-            return this.saldo += valorDepositado;
-
+            this.saldo += valorDepositado;
+            Console.WriteLine("Deposito realizado com sucesso!");
         }
 
         public void sacar(double valorDoSaque)
