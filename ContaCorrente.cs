@@ -28,9 +28,9 @@ namespace Curso_Alura_Orientacao_a_Objetos
                "\nConta Corrente: " + this.conta_corrente);
         }
         // Deposito obrigatório da interface IRegras
-        public double primeiroDepositar(double valor)
+        public void primeiroDepositar(double valor)
         {
-            return this.saldo = valor;
+            this.saldo = valor;
             Console.WriteLine("Primeiro depósito efetuado no valor de R$ " + this.saldo);
         }
 
