@@ -23,6 +23,8 @@ class Program
         conta2.primeiroDepositar(10);
         conta2.consultaSaldo();
 
+        Console.WriteLine("_________________________________");
+
 
         // Transferindo da conta1 para a conta2 depois que o objeto conta2 é criado
         conta1.transferir(50.0, conta2);
