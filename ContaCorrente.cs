@@ -59,7 +59,7 @@ namespace Curso_Alura_Orientacao_a_Objetos
             {
                 this.saldo -= valorTrasferido;
                 destino.saldo += valorTrasferido;
-                Console.WriteLine("Transferencia realizada com sucesso.. Valor: " + valorTrasferido)
+                Console.WriteLine("Transferencia realizada com sucesso.. Valor: " + valorTrasferido);
             }
             else
             {
@@ -69,7 +69,7 @@ namespace Curso_Alura_Orientacao_a_Objetos
 
         public void consultaSaldo()
         {
-            Console.WriteLine("Saldo disponivel R$ " + this.saldo);
+            Console.WriteLine("\nTitular da conta: "+this.nome + "\nSaldo disponivel R$ " + this.saldo);
         }
     }
 }
