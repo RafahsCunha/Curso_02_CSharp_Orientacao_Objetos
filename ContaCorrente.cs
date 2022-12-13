@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Curso_Alura_Orientacao_a_Objetos
 {
-    class ContaCorrente : IRegras
+    class ContaCorrente
     {
         public ContaCorrente()
         {
