@@ -1,11 +1,11 @@
-﻿using Alura;
+﻿using Alura.Titular;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Curso_Alura_Orientacao_a_Objetos
+namespace Alura.Contas
 {
     class ContaCorrente
     {
@@ -21,7 +21,7 @@ namespace Curso_Alura_Orientacao_a_Objetos
 
         public void usuarioConta(Cliente titular, string agencia, string conta_corrente) // o parãmetro titular é um objeto da classe Cliente, ele pode receber atributos da classe Cliente
         {
-            this.titular = titular; 
+            this.titular = titular;
             this.agencia = agencia;
             this.conta_corrente = conta_corrente;
 
@@ -31,21 +31,21 @@ namespace Curso_Alura_Orientacao_a_Objetos
         // Deposito obrigatório da interface IRegras
         public void primeiroDeposito(double valor)
         {
-            this.saldo = valor;
-            Console.WriteLine("Primeiro depósito efetuado no valor de R$ " + this.saldo);
+            saldo = valor;
+            Console.WriteLine("Primeiro depósito efetuado no valor de R$ " + saldo);
         }
 
         public void depositar(double valorDepositado)
         {
-            this.saldo += valorDepositado;
+            saldo += valorDepositado;
             Console.WriteLine("Deposito realizado com sucesso!");
         }
 
         public void sacar(double valorDoSaque)
         {
-            if (valorDoSaque <= this.saldo)
+            if (valorDoSaque <= saldo)
             {
-                this.saldo -= valorDoSaque;
+                saldo -= valorDoSaque;
                 Console.WriteLine("Saque realizado com sucesso.. Valor: R$" + valorDoSaque);
             }
             else
@@ -56,9 +56,9 @@ namespace Curso_Alura_Orientacao_a_Objetos
         }
         public void transferir(double valorTrasferido, ContaCorrente destino)
         {
-            if (valorTrasferido <= this.saldo)
+            if (valorTrasferido <= saldo)
             {
-                this.saldo -= valorTrasferido;
+                saldo -= valorTrasferido;
                 destino.saldo += valorTrasferido;
                 Console.WriteLine("Transferencia realizada com sucesso.. Valor: " + valorTrasferido);
             }
@@ -70,7 +70,7 @@ namespace Curso_Alura_Orientacao_a_Objetos
 
         public void consultaSaldo()
         {
-            Console.WriteLine("\nTitular da conta: "+this.titular + "\nSaldo disponivel R$ " + this.saldo);
+            Console.WriteLine("\nTitular da conta: " + titular + "\nSaldo disponivel R$ " + saldo);
         }
     }
 }

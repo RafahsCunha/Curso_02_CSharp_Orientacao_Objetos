@@ -1,7 +1,5 @@
-﻿
-
-using Alura;
-using Curso_Alura_Orientacao_a_Objetos;
+﻿using Alura.Contas;
+using Alura.Titular;
 using System;
 
 class Program

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Curso_Alura_Orientacao_a_Objetos
+namespace Alura.Interfaces
 {
     interface IRegras
     {
