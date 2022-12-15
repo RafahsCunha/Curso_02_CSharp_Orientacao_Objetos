@@ -15,12 +15,14 @@ class Program
 
         conta1.usuarioConta(cliente1, "Itaú-1234", "12334-4");
 
+        conta1.setprimeiroDeposito(100);
+
         Console.WriteLine("Titular: "+conta1.titular.nome +
             "\nCPF: " + conta1.titular.cpf +
             "\nProfissao: "+ conta1.titular.profissao + 
             "\nAgencia: "+conta1.agencia +
             "\nConta Corrente: "+conta1.conta_corrente + 
-            "\nSaldo: "+ conta1.saldo);
+            "\nSaldo: "+ conta1.getSaldo());
 
 
         Console.WriteLine();
@@ -33,12 +35,14 @@ class Program
 
         conta2.usuarioConta(cliente2, "9875", "4567-8");
 
+        conta2.setprimeiroDeposito(200);
+
         Console.WriteLine("Titular: " + conta2.titular.nome +
             "\nCPF: " + conta2.titular.cpf +
             "\nProfissao: " + conta2.titular.profissao +
             "\nAgencia: " + conta2.agencia +
             "\nConta Corrente: " + conta2.conta_corrente +
-            "\nSaldo: " + conta2.saldo);
+            "\nSaldo: " + conta2.getSaldo());
 
 
         //ContaCorrente conta1 = new ContaCorrente();
