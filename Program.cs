@@ -23,6 +23,22 @@ class Program
             "\nSaldo: "+ conta1.saldo);
 
 
+        Console.WriteLine();
+
+        Cliente cliente2 = new Cliente();
+        cliente2.criaCliente("Jennyfer","98765432-1","Vendedora");
+
+        ContaCorrente conta2 = new ContaCorrente();
+        conta2.titular = cliente2;
+
+        conta2.usuarioConta(cliente2, "9875", "4567-8");
+
+        Console.WriteLine("Titular: " + conta2.titular.nome +
+            "\nCPF: " + conta2.titular.cpf +
+            "\nProfissao: " + conta2.titular.profissao +
+            "\nAgencia: " + conta2.agencia +
+            "\nConta Corrente: " + conta2.conta_corrente +
+            "\nSaldo: " + conta2.saldo);
 
 
         //ContaCorrente conta1 = new ContaCorrente();
