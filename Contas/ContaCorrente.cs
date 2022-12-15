@@ -16,7 +16,7 @@ namespace Alura.Contas
         public Cliente titular; // O atributo titular agora é um objeto do tipo Cliente, ou seja, ele pode receber os atributos da classe cliente 
         public string agencia;
         public string conta_corrente;
-        public double saldo;
+        private double saldo;
 
 
         public void usuarioConta(Cliente titular, string agencia, string conta_corrente) // o parãmetro titular é um objeto da classe Cliente, ele pode receber atributos da classe Cliente
@@ -29,23 +29,31 @@ namespace Alura.Contas
             //   "\nConta Corrente: " + this.conta_corrente);
         }
         // Deposito obrigatório da interface IRegras
-        public void primeiroDeposito(double valor)
+        public void setprimeiroDeposito(double valor)
         {
-            saldo = valor;
-            Console.WriteLine("Primeiro depósito efetuado no valor de R$ " + saldo);
+            if (valor < 0)
+            {
+                return;
+            }
+            else
+            {
+               this.saldo += valor;
+            }
+            
+            //console.writeline("primeiro depósito efetuado no valor de r$ " + this.saldo);
         }
 
-        public void depositar(double valorDepositado)
+        public void setdepositar(double valorDepositado)
         {
-            saldo += valorDepositado;
+            this.saldo += valorDepositado;
             Console.WriteLine("Deposito realizado com sucesso!");
         }
 
         public void sacar(double valorDoSaque)
         {
-            if (valorDoSaque <= saldo)
+            if (valorDoSaque <= this.saldo)
             {
-                saldo -= valorDoSaque;
+                this.saldo -= valorDoSaque;
                 Console.WriteLine("Saque realizado com sucesso.. Valor: R$" + valorDoSaque);
             }
             else
@@ -68,9 +76,10 @@ namespace Alura.Contas
             }
         }
 
-        public void consultaSaldo()
+        public double getSaldo()
         {
-            Console.WriteLine("\nTitular da conta: " + titular + "\nSaldo disponivel R$ " + saldo);
+            return this.saldo;
+            //Console.WriteLine("\nTitular da conta: " + this.titular.nome + "\nSaldo disponivel R$ " + this.saldo);
         }
     }
 }
