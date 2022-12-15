@@ -31,9 +31,9 @@ namespace Alura.Contas
         // Deposito obrigatório da interface IRegras
         public void setprimeiroDeposito(double valor)
         {
-            if (valor < 0)
+            if (valor < 0) // este if não deixa inserir um valor negativo no saldo
             {
-                return;
+                return; // não retorna nada
             }
             else
             {
