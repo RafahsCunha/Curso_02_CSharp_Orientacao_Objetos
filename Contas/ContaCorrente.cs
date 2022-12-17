@@ -14,15 +14,30 @@ namespace Alura.Contas
             Console.WriteLine("******* BANCO JAAR *******");
         }
         public Cliente titular; // O atributo titular agora é um objeto do tipo Cliente, ou seja, ele pode receber os atributos da classe cliente 
-        public string agencia;
+        public int numero_agencia;
+
+        //Propriedade do atributo numero_agencia
+
+        // Conceito de propriedade: Ela pode substituir um método para desencapsular um atributo privado
+        public int Numero_Agencia
+        {
+            get { return this.numero_agencia; }
+            set {
+                    if (value >= 1000)
+                {
+                    this.numero_agencia = value;
+                }
+                }
+        }
+
         public string conta_corrente;
         private double saldo;
 
 
-        public void usuarioConta(Cliente titular, string agencia, string conta_corrente) // o parãmetro titular é um objeto da classe Cliente, ele pode receber atributos da classe Cliente
+        public void usuarioConta(Cliente titular, int agencia, string conta_corrente) // o parãmetro titular é um objeto da classe Cliente, ele pode receber atributos da classe Cliente
         {
             this.titular = titular;
-            this.agencia = agencia;
+            this.numero_agencia = agencia;
             this.conta_corrente = conta_corrente;
 
             //Console.WriteLine("Titular: " + this.nome + "\nAgencia: " + this.agencia +
