@@ -24,9 +24,9 @@ namespace Alura.Contas
             get { return this.numero_agencia; }
             set {
                     if (value >= 1000)
-                {
-                    this.numero_agencia = value;
-                }
+                    {
+                        this.numero_agencia = value;
+                    }
                 }
         }
 
