@@ -14,7 +14,7 @@ namespace Alura.Contas
             Console.WriteLine("******* BANCO JAAR *******");
         }
         public Cliente titular; // O atributo titular agora é um objeto do tipo Cliente, ou seja, ele pode receber os atributos da classe cliente 
-        public int numero_agencia;
+        private int numero_agencia;
 
         //Propriedade do atributo numero_agencia
 
@@ -30,7 +30,12 @@ namespace Alura.Contas
                 }
         }
 
-        public string conta_corrente;
+        private string conta_corrente;
+        public string Conta_Corrente
+        {
+            get { return this.conta_corrente; }
+            set { this.conta_corrente = value; }
+        }
         private double saldo;
 
 
@@ -41,7 +46,7 @@ namespace Alura.Contas
             this.conta_corrente = conta_corrente;
 
             //Console.WriteLine("Titular: " + this.nome + "\nAgencia: " + this.agencia +
-            //   "\nConta Corrente: " + this.conta_corrente);
+            // "\nConta Corrente: " + this.conta_corrente);
         }
         // Deposito obrigatório da interface IRegras
         public void setprimeiroDeposito(double valor)
