@@ -20,9 +20,9 @@ class Program
         Console.WriteLine("Titular: "+conta1.titular.nome +
             "\nCPF: " + conta1.titular.cpf +
             "\nProfissao: "+ conta1.titular.profissao + 
-            "\nAgencia: "+conta1.numero_agencia +
-            "\nConta Corrente: "+conta1.conta_corrente + 
-            "\nSaldo: "+ conta1.getSaldo());
+            "\nAgencia: "+conta1.Numero_Agencia + // Acessando a Propriedade. As iniciais são maiúscula. Tipo Pascal Case
+            "\nConta Corrente: "+conta1.Conta_Corrente + // Acessando a Propriedade. As iniciais são maiúscula. Tipo Pascal Case
+            "\nSaldo: " + conta1.getSaldo());
 
 
         Console.WriteLine();
@@ -40,8 +40,8 @@ class Program
         Console.WriteLine("Titular: " + conta2.titular.nome +
             "\nCPF: " + conta2.titular.cpf +
             "\nProfissao: " + conta2.titular.profissao +
-            "\nAgencia: " + conta2.numero_agencia +
-            "\nConta Corrente: " + conta2.conta_corrente +
+            "\nAgencia: " + conta2.Numero_Agencia + // Acessando a Propriedade. As iniciais são maiúscula. Tipo Pascal Case
+            "\nConta Corrente: " + conta2.Conta_Corrente + // Acessando a Propriedade. As iniciais são maiúscula. Tipo Pascal Case
             "\nSaldo: " + conta2.getSaldo());
 
 
