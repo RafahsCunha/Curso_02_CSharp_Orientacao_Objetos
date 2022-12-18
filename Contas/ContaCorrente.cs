@@ -13,13 +13,17 @@ namespace Alura.Contas
         {
             Console.WriteLine("******* BANCO JAAR *******");
         }
-        public Cliente titular; // O atributo titular agora é um objeto do tipo Cliente, ou seja, ele pode receber os atributos da classe cliente 
+        //public Cliente titular; // O atributo titular agora é um objeto do tipo Cliente, ou seja, ele pode receber os atributos da classe cliente 
         private int numero_agencia;
+        //private string conta_corrente;
+        private double saldo;
+
+
 
         //Propriedade do atributo numero_agencia
 
         // Conceito de propriedade: Ela pode substituir um método para desencapsular um atributo privado
-        public int Numero_Agencia
+        public int Numero_Agencia // Propriedade do atributo privado numero_agencia
         {
             get { return this.numero_agencia; }
             set {
@@ -30,20 +34,18 @@ namespace Alura.Contas
                 }
         }
 
-        private string conta_corrente;
-        public string Conta_Corrente
-        {
-            get { return this.conta_corrente; }
-            set { this.conta_corrente = value; }
-        }
-        private double saldo;
+        // Propriedade do atributo privado conta_corrente
+        public string Conta_Corrente { get; set; } // Conceito de propriedade auto implementada, ou seja, ela é criada em vez do atributo
 
 
-        public void usuarioConta(Cliente titular, int agencia, string conta_corrente) // o parãmetro titular é um objeto da classe Cliente, ele pode receber atributos da classe Cliente
+        // Propriedade do atributo Titular
+        public Cliente Titular { get; set; }
+
+        public void setusuarioConta(Cliente titular, int agencia, string conta_corrente) // o parãmetro titular é um objeto da classe Cliente, ele pode receber atributos da classe Cliente
         {
-            this.titular = titular;
-            this.numero_agencia = agencia;
-            this.conta_corrente = conta_corrente;
+            this.Titular = titular;
+            this.Numero_Agencia = agencia;
+            this.Conta_Corrente = conta_corrente;
 
             //Console.WriteLine("Titular: " + this.nome + "\nAgencia: " + this.agencia +
             // "\nConta Corrente: " + this.conta_corrente);
