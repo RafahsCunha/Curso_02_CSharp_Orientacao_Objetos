@@ -9,9 +9,15 @@ namespace Alura.Contas
 {
     class ContaCorrente
     {
-        public ContaCorrente()
+        public ContaCorrente() 
         {
-            Console.WriteLine("******* BANCO JAAR *******");
+            Console.WriteLine("******* BANCO JAAR *******"); // Construtor secundário ou normal
+        }
+
+        // ctor tab tab - atalho para criar um método construtor
+        public ContaCorrente(int agencia) // Método Costrutor // Construtor principal é definido quando um construtor possui parâmetro
+        {
+            this.Numero_Agencia = agencia;
         }
         //public Cliente titular; // O atributo titular agora é um objeto do tipo Cliente, ou seja, ele pode receber os atributos da classe cliente 
         private int numero_agencia;
@@ -26,10 +32,11 @@ namespace Alura.Contas
         public int Numero_Agencia // Propriedade do atributo privado numero_agencia
         {
             get { return this.numero_agencia; }
-            set {
+            private set { // set visivel somente dentro da propria classe, ele está verificando se o valor da agencia é um valor positivo de 4 dígitos
                     if (value >= 1000)
                     {
                         this.numero_agencia = value;
+                         
                     }
                 }
         }
@@ -41,10 +48,10 @@ namespace Alura.Contas
         // Propriedade do atributo Titular
         public Cliente Titular { get; set; }
 
-        public void setusuarioConta(Cliente titular, int agencia, string conta_corrente) // o parãmetro titular é um objeto da classe Cliente, ele pode receber atributos da classe Cliente
+        public void setusuarioConta(Cliente titular, string conta_corrente) // o parãmetro titular é um objeto da classe Cliente, ele pode receber atributos da classe Cliente
         {
             this.Titular = titular;
-            this.Numero_Agencia = agencia;
+            //this.Numero_Agencia = agencia;
             this.Conta_Corrente = conta_corrente;
 
             //Console.WriteLine("Titular: " + this.nome + "\nAgencia: " + this.agencia +

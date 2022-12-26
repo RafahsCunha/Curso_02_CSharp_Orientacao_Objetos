@@ -10,10 +10,10 @@ class Program
         Cliente cliente1 = new Cliente(); // objeto cliente1
         //cliente1.criaCliente("Rafael", "12344567", "Dev"); // adiciona valores no objeto cliente1 através do método criaCliente 
         cliente1.cliente("Rafael Henrique", "123456789-9","Desenvolvedor");
-        ContaCorrente conta1 = new ContaCorrente(); // objeto conta1
+        ContaCorrente conta1 = new ContaCorrente(1234); // objeto conta1. // Numero da agencia inserido como parâmetro do Construtor principal
         conta1.Titular = cliente1; // objeto conta1.titular recebe o objeto cliente1. OBS titular é um objeto do tipo Cliente
 
-        conta1.setusuarioConta(cliente1, 1234, "12334-4");
+        conta1.setusuarioConta(cliente1, "12334-4");
 
         conta1.setprimeiroDeposito(100);
 
@@ -31,10 +31,10 @@ class Program
         //cliente2.criaCliente("Jennyfer","98765432-1","Vendedora");
         cliente2.cliente("Jennyfer Ribeiro", "987654321-1", "Vendedora");
 
-        ContaCorrente conta2 = new ContaCorrente();
+        ContaCorrente conta2 = new ContaCorrente(1234);
         conta2.Titular = cliente2;
 
-        conta2.setusuarioConta(cliente2, 9875, "4567-8");
+        conta2.setusuarioConta(cliente2, "4567-8");
 
         conta2.setprimeiroDeposito(200);
 
