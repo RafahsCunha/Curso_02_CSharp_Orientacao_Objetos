@@ -18,7 +18,13 @@ namespace Alura.Contas
         public ContaCorrente(int agencia) // Método Costrutor // Construtor principal é definido quando um construtor possui parâmetro
         {
             this.Numero_Agencia = agencia;
+            TotalDeContasCriadas++; // Propriedade contadora que é carregada assim que o Construtor ContaCorrente é acionado
         }
+
+        // Propriedade static
+        public static int TotalDeContasCriadas { get; private set; } // Propriedade statica da Classe. Ou seja, para utiliza-la não é necessário criar um objeto
+
+
         //public Cliente titular; // O atributo titular agora é um objeto do tipo Cliente, ou seja, ele pode receber os atributos da classe cliente 
         private int numero_agencia;
         //private string conta_corrente;
@@ -46,8 +52,10 @@ namespace Alura.Contas
 
 
         // Propriedade do atributo Titular
+        // atalho prop tab tab
         public Cliente Titular { get; set; }
 
+        
         public void setusuarioConta(Cliente titular, string conta_corrente) // o parãmetro titular é um objeto da classe Cliente, ele pode receber atributos da classe Cliente
         {
             this.Titular = titular;

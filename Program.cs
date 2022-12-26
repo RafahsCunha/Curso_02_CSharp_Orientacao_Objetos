@@ -16,7 +16,7 @@ class Program
         conta1.setusuarioConta(cliente1, "12334-4");
 
         conta1.setprimeiroDeposito(100);
-
+          
         Console.WriteLine("Titular: "+conta1.Titular.Nome +
             "\nCPF: " + conta1.Titular.Cpf +
             "\nProfissao: "+ conta1.Titular.Profissao + 
@@ -45,6 +45,9 @@ class Program
             "\nConta Corrente: " + conta2.Conta_Corrente + // Acessando a Propriedade. As iniciais são maiúscula. Tipo Pascal Case
             "\nSaldo: " + conta2.getSaldo());
 
+
+        // Exibindo a quantidade de contas criadas
+        Console.WriteLine("\nTotal de Contas Criadas: " + ContaCorrente.TotalDeContasCriadas); // Como a propriedade TotaldeContasCriadas é uma referência da classe, é nesserário chamar a sua Classe e depois a propriedade. 
 
         //ContaCorrente conta1 = new ContaCorrente();
         //conta1.usuario("Rafael Henrique", "1234", "4321-2");
